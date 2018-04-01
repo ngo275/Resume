@@ -5,12 +5,14 @@ import { initialize } from '../ducks/intl'
 class App extends Component {
 
   async componentWillMount () {
+    // console.log(this.props)
     await this.props.initLocale()
   }
 
   render() {
-    this.props.initLocale()
-    const { intl } = this.props
+    // this.props.initLocale()
+    console.log(this.props.intl)
+    // const { intl } = this.props
     return (
       <div className="App">
         <header className="App-header">
@@ -25,13 +27,13 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    intl: state.intl,
+    intl: state,
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    initLocale: () => dispatch(initialize()),
+    initLocale: async () => dispatch(initialize()),
   }
 }
 

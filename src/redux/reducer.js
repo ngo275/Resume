@@ -1,9 +1,12 @@
 // @flow
 import { combineReducers } from 'redux'
-import { reducer as IntlReducer } from '../ducks/intl'
+import {
+  key as intlKey,
+  reducer as intlReducer
+} from '../ducks/intl'
 
 export const configureReducer = () => {
   return combineReducers({
-    IntlReducer
+    [intlKey]: intlReducer
   })
 }

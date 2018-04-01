@@ -3,6 +3,9 @@
 import type { Action, Locale } from '../types'
 import { createLogic } from 'redux-logic'
 import intl from 'react-intl-universal'
+import { Locales } from '../types'
+
+export const key: string = 'intl'
 
 const locales = {
   'en-US': require('../locales/en-US.json'),
@@ -52,14 +55,13 @@ export const setLocale = (locale) => {
 
 // Reducer
 export const reducer = (state: InitialState = initialState, action: Action) => {
-  console.log(state, action)
   switch (action.type) {
     case INITIALIZE:
       return { ...state, isLoading: true }
     case INITIALIZED:
-      return { ...state, initialized: true, isLoading: false }
+      return { initialized: true, isLoading: false, ...state }
     case SET_LOCALE:
-      return { ...state, locale: action.payload.locale }
+      return { locale: action.payload.locale, ...state }
   }
 }
 
@@ -69,13 +71,13 @@ const initializeLogic = createLogic({
   latest: true,
 
   process({ getState, action }, dispatch, done) {
-    console.log('aaaaaaaaaaaaaaaaaa')
     let agentLocale = intl.determineLocale({
       urlLocaleKey: 'lang',
       cookieLocaleKey: 'lang',
     })
+    console.log(agentLocale)
     if (Object.keys(locales).findIndex( v => v === agentLocale ) === -1) {
-      agentLocale = locales['ja-JP']
+      agentLocale = Locales['ja-JP']
     }
 
     intl.init({
@@ -88,6 +90,17 @@ const initializeLogic = createLogic({
   }
 })
 
+export const setLocaleLogic = createLogic({
+  type: SET_LOCALE,
+  latest: true,
+
+  process({ action }, dispatch, done) {
+    window.location.search = `?lang=${action.payload.locale}`
+    done()
+  }
+})
+
 export const logic = [
   initializeLogic,
+  setLocaleLogic,
 ]
