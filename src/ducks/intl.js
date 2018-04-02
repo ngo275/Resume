@@ -21,7 +21,7 @@ type InitialState = {
 
 const initialState: InitialState = {
   initialized: false,
-  inLoading: false,
+  isLoading: false,
   locale: locales['ja-JP'],
 }
 
@@ -59,9 +59,9 @@ export const reducer = (state: InitialState = initialState, action: Action) => {
     case INITIALIZE:
       return { ...state, isLoading: true }
     case INITIALIZED:
-      return { initialized: true, isLoading: false, ...state }
+      return { ...state, initialized: true, isLoading: false }
     case SET_LOCALE:
-      return { locale: action.payload.locale, ...state }
+      return { ...state, locale: action.payload.locale }
   }
 }
 
@@ -75,7 +75,7 @@ const initializeLogic = createLogic({
       urlLocaleKey: 'lang',
       cookieLocaleKey: 'lang',
     })
-    console.log(agentLocale)
+
     if (Object.keys(locales).findIndex( v => v === agentLocale ) === -1) {
       agentLocale = Locales['ja-JP']
     }
@@ -90,7 +90,7 @@ const initializeLogic = createLogic({
   }
 })
 
-export const setLocaleLogic = createLogic({
+const setLocaleLogic = createLogic({
   type: SET_LOCALE,
   latest: true,
 
