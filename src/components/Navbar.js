@@ -22,6 +22,7 @@ class Navbar extends Component {
   }
 
   handleLangButton = () => {
+    this.props.onLangChange(this.props)
   }
 }
 

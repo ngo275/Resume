@@ -8,7 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { withStyles } from 'material-ui/styles'
 import { initialize, setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
-import Navbar from '../components/Navbar'
+import Navbar from '../containers/Navbar'
 
 const styles = theme => ({
   progress: {
