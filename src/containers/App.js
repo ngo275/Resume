@@ -41,8 +41,9 @@ class App extends Component {
   }
 
   _renderContents = () => {
+    const { classes } = this.props
     return (
-      <div>
+      <div className={classes.centered}>
         <Navbar />
         <p className="App-intro">
           {intl.get('en-US')}

@@ -1,3 +1,4 @@
+// @flow
 import Navbar from '../components/Navbar'
 import { connect } from 'react-redux'
 import { compose, withHandlers } from 'recompose'
@@ -12,9 +13,9 @@ export default compose(
     })
   ),
   withHandlers({
-    onLangChange: props => event => {
-      console.log(props, event)
-      props.setLocale('en-US')
+    onLangChange: props => (lang: Locale) => {
+      console.log(lang)
+      props.setLocale(lang)
     }
   })
 )(Navbar)
