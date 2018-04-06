@@ -9,6 +9,8 @@ import { withStyles } from 'material-ui/styles'
 import { initialize, setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
 import Navbar from '../containers/Navbar'
+import ProfileHeader from '../components/ProfileHeader'
+import CareerCard from '../containers/CareerCard'
 
 const styles = theme => ({
   progress: {
@@ -45,10 +47,11 @@ class App extends Component {
     return (
       <div className={classes.centered}>
         <Navbar />
+        <ProfileHeader />
         <p className="App-intro">
           {intl.get('en-US')}
-          hogehoge
         </p>
+        <CareerCard/>
       </div>
     )
   }
