@@ -15,7 +15,7 @@ import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
   card: {
-    maxWidth: 400,
+    maxWidth: 420,
     margin: 16,
   },
   media: {
