@@ -62,6 +62,8 @@ export const reducer = (state: InitialState = initialState, action: Action) => {
       return { ...state, initialized: true, isLoading: false }
     case SET_LOCALE:
       return { ...state, locale: action.payload.locale }
+    default:
+      return { ...state }
   }
 }
 

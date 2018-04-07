@@ -1,7 +1,7 @@
 // @flow
-import { createStore, compose, applyMiddleware } from 'redux'
+import { createStore,applyMiddleware } from 'redux'
 import { createLogicMiddleware } from 'redux-logic'
-import { configureReducer } from './reducer'
+// import { configureReducer } from './reducer'
 import { reducer } from '../ducks/intl'
 import logic from './logic'
 

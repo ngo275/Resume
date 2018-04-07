@@ -27,7 +27,6 @@ class App extends Component {
 
   async componentWillMount () {
     await this.props.initLocale()
-    // await this.props.setLocale('en-US')
   }
 
   render() {

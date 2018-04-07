@@ -1,13 +1,10 @@
 // @flow
 import MyCard from '../components/MyCard'
 import { connect } from 'react-redux'
-import { compose, withHandlers, withProps } from 'recompose'
+import { compose, withProps } from 'recompose'
 
 export default compose(
-  connect(
-    state => ({}),
-    dispatch => ({})
-  ),
+  connect(),
   withProps({
     title: 'career-title',
     subTitle: 'career-updated-at',
@@ -22,12 +19,5 @@ export default compose(
       'career-gradschool-dropout',
       'career-anypay-entry',
     ],
-
-  }),
-  withHandlers({
-    onLangChange: props => (lang: Locale) => {
-      console.log(lang)
-      props.setLocale(lang)
-    }
   })
 )(MyCard)

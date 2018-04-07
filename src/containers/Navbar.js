@@ -2,7 +2,7 @@
 import Navbar from '../components/Navbar'
 import { connect } from 'react-redux'
 import { compose, withHandlers } from 'recompose'
-import { initialize, setLocale } from '../ducks/intl'
+import { setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
 
 export default compose(
@@ -14,7 +14,6 @@ export default compose(
   ),
   withHandlers({
     onLangChange: props => (lang: Locale) => {
-      console.log(lang)
       props.setLocale(lang)
     }
   })

@@ -4,7 +4,6 @@ import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
 import Avatar from 'material-ui/Avatar'
 import { withStyles } from 'material-ui/styles'
-import { Locale, Locales } from '../types'
 
 const styles = theme => ({
   container: {

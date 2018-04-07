@@ -4,7 +4,6 @@ import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Avatar from 'material-ui/Avatar'
-import Button from 'material-ui/Button'
 import Card, { CardHeader, CardMedia, CardContent, CardActions } from 'material-ui/Card'
 import Collapse from 'material-ui/transitions/Collapse'
 import ExpandMoreIcon from 'material-ui-icons/ExpandMore'
@@ -85,11 +84,10 @@ class MyCard extends Component {
         <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
             <Typography paragraph variant='body2'>
-              Method:
             </Typography>
             {texts.map(t => {
               return (
-                <Typography paragraph>
+                <Typography key={t} paragraph>
                   {intl.get(t)}
                 </Typography>
               )
@@ -110,7 +108,7 @@ MyCard.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  imgPath: PropTypes.object.isRequired,
+  imgPath: PropTypes.any.isRequired,
   texts: PropTypes.array.isRequired,
 }
 

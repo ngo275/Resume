@@ -23,6 +23,7 @@ const styles = theme => ({
 class Navbar extends Component {
   constructor (props) {
     super(props)
+
     this.state = {
       anchorEl: null,
     }
@@ -45,7 +46,7 @@ class Navbar extends Component {
           onClose={this.handleClose}
         >
           {Object.entries(Locales).map(locale => (
-            <MenuItem onClick={() => this.handleLangButton(locale[0])}>{intl.get(locale[0])}</MenuItem>
+            <MenuItem key={locale} onClick={() => this.handleLangButton(locale[0])}>{intl.get(locale[0])}</MenuItem>
           ))}
         </Menu>
       </div>
