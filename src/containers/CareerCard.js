@@ -17,6 +17,8 @@ export default compose(
       'career-university-entry',
       'career-university-graduation',
       'career-gradschool-entry',
+      'career-internship-candle',
+      'career-internship-mercari',
       'career-gradschool-dropout',
       'career-anypay-entry',
     ],
