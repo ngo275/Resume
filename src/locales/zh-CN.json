@@ -13,5 +13,15 @@
   "career-gradschool-entry": "2016年4月 东京大学院工学系系统创建学专业入学",
   "career-internship-mercari": "2017年3月 メルカリのインターンシップで一週間アメリカへ",
   "career-gradschool-dropout": "2017年3月 东京大学院中退",
-  "career-anypay-entry": "2017年4月 AnyPay会社入社"
+  "career-anypay-entry": "2017年4月 AnyPay会社入社",
+
+  "skills-title": "技艺",
+  "skills-updated-at": "2018年4月7日",
+  "skills-description": "SwiftでのiOS開発、React NativeでのiOS/Androidアプリの開発、そのバックエンドの開発(Ruby)を主に業務で担当している。もともとSwiftが好きだったが、業務でJavaScriptをがっつり触っているうちにJavaScriptへの愛着が湧いてきた。他にもブロックチェーンに関心があるので、Ethereumや他のチェーンの調査や、Solidityを使ったスマートコントラクトの実装をすることもある。",
+  "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity",
+  "skills-environments": "MacOS / Linux",
+
+  "hobby-title": "爱好",
+  "hobby-updated-at": "2018年4月7日",
+  "hobby-description": ""
 }

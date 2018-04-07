@@ -11,6 +11,7 @@ import type { Locale } from '../types'
 import Navbar from '../containers/Navbar'
 import ProfileHeader from '../components/ProfileHeader'
 import CareerCard from '../containers/CareerCard'
+import SkillsCard from '../containers/SkillsCard'
 
 const styles = theme => ({
   progress: {
@@ -51,6 +52,7 @@ class App extends Component {
           {intl.get('en-US')}
         </p>
         <CareerCard/>
+        <SkillsCard/>
       </div>
     )
   }

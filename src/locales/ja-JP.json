@@ -14,5 +14,16 @@
   "career-internship-candle": "2016年 学科の同期が設立した株式会社Candleで1年強インターンシップをする",
   "career-internship-mercari": "2017年3月 メルカリのインターンシップで一週間アメリカへ",
   "career-gradschool-dropout": "2017年3月 東京大学院中退",
-  "career-anypay-entry": "2017年4月 AnyPay株式会社入社"
+  "career-anypay-entry": "2017年4月 AnyPay株式会社入社",
+
+  "skills-title": "スキル",
+  "skills-updated-at": "2018年4月7日",
+  "skills-description": "SwiftでのiOS開発、React NativeでのiOS/Androidアプリの開発、そのバックエンドの開発(Ruby)を主に業務で担当している。もともとSwiftが好きだったが、業務でJavaScriptをがっつり触っているうちにJavaScriptへの愛着が湧いてきた。他にもブロックチェーンに関心があるので、Ethereumや他のチェーンの調査や、Solidityを使ったスマートコントラクトの実装をすることもある。",
+  "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity",
+  "skills-environments": "MacOS / Linux",
+
+  "hobby-title": "趣味・最近の関心",
+  "hobby-updated-at": "2018年4月7日",
+  "hobby-description": "趣味はプログラミングやものつくり、筋トレ、旅行。週末は他の会社の開発を手伝うこともあるが、それ以外の時間は好きなコードを書いていたり新しい技術を見ていたりする。朝ジムに行くことにもハマっていてウェイトをしてから出社している。2018年の目標はベンチプレス120kgを上げること。海外にもよく視察を兼ねて旅行しており2017年は中国に頻繁に行っていた。",
+  "hobby-programming": ""
 }

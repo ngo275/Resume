@@ -13,5 +13,11 @@
   "career-gradschool-entry": "April, 2016 Graduate School | The university of Tokyo",
   "career-internship-mercari": "March, 2017 Mercari's internship to go to the US",
   "career-gradschool-dropout": "March, 2017 Graduate School | The university of Tokyo",
-  "career-anypay-entry": "April, 2017 AnyPay Inc."
+  "career-anypay-entry": "April, 2017 AnyPay Inc.",
+
+  "skills-title": "Skills",
+  "skills-updated-at": "April 7th, 2018",
+  "skills-description": "SwiftでのiOS開発、React NativeでのiOS/Androidアプリの開発、そのバックエンドの開発(Ruby)を主に業務で担当している。もともとSwiftが好きだったが、業務でJavaScriptをがっつり触っているうちにJavaScriptへの愛着が湧いてきた。他にもブロックチェーンに関心があるので、Ethereumや他のチェーンの調査や、Solidityを使ったスマートコントラクトの実装をすることもある。",
+  "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity",
+  "skills-environments": "MacOS / Linux"
 }
