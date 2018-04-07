@@ -30,17 +30,21 @@ class Main extends Component {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Grid container className={classes.demo} justify='center'>
-            <Grid key='career' item xs={12} sm={6} md={6} className={classes.centered}>
-              <CareerCard/>
+            <Grid item xs={12} sm={6}>
+              <Grid key='career' item xs={12} className={classes.centered}>
+                <CareerCard/>
+              </Grid>
+              <Grid key='skills' item xs={12} className={classes.centered}>
+                <SkillsCard/>
+              </Grid>
             </Grid>
-            <Grid key='skills' item xs={12} sm={6} md={6} className={classes.centered}>
-              <SkillsCard/>
-            </Grid>
-            <Grid key='hobby' item xs={12} sm={6} md={6} className={classes.centered}>
-              <HobbyCard/>
-            </Grid>
-            <Grid key='skills2' item xs={12} sm={6} md={6} className={classes.centered}>
-              <SkillsCard/>
+            <Grid item xs={12} sm={6}>
+              <Grid key='hobby' item xs={12} className={classes.centered}>
+                <HobbyCard/>
+              </Grid>
+              <Grid key='skills2' item xs={12} className={classes.centered}>
+                <SkillsCard/>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
