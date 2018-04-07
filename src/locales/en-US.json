@@ -2,5 +2,37 @@
   "en-US": "English",
   "ja-JP": "Japanese",
   "zh-CN": "Chinese",
-  "languages": "Languages"
+  "languages": "Languages",
+  "name": "Shuichi Nagao",
+
+  "career-title": "Career Summary",
+  "career-updated-at": "April 7th, 2018",
+  "career-description": "I entered the university of Tokyo in April of 2012, and spent most of my university days on lacrosse. My major was engineering, and I got interested in programming then. Though I proceeded to graduate school in March of 2016, I dropped out in one year, because I was strongly into startup. After dropout I entered AnyPay inc that runs some payment services, as a software engineer. Since fall of 2017 I have been involved in blockchain, or crypto, projects.",
+  "career-title-university-entry": "April, 2012 | Enter the university of Tokyo",
+  "career-university-entry1": "Studied liberal arts in scientific class",
+  "career-university-entry2": "Proceeded to the department of System Innovation, Engineering faculty.",
+  "career-internship-candle": "As of December in 2015, I started Internship as a software engineer, which drove me to learn programming so hard.",
+  "career-title-university-graduation": "March, 2016 | Graduate from the university of Tokyo",
+  "career-university-graduation": "Graduated from the university of Tokyo",
+  "career-title-gradschool-entry": "April, 2016 | Enter Graduate School (the university of Tokyo)",
+  "career-gradschool-entry": "Then I was into startup so I stopped studying in graduate school and was dedicated myself to programming to make applications. Through some internships, like mercari, I decided to officially join startup not for internship.",
+  "career-title-gradschool-dropout": "March, 2017 | Dropout Graduate School (the university of Tokyo)",
+  "career-title-anypay-entry": "April, 2017 | Enter AnyPay Inc.",
+  "career-anypay-entry1": "I joined AnyPay Inc. as a very first iOS developer. In summer I started to develop server-side of a new project with Ruby. Since fall I have been involved in another new project related to crypto, actually I have been coding React Native.",
+
+  "skills-title": "Skills",
+  "skills-updated-at": "April 7th, 2018",
+  "skills-description": "SwiftでのiOS開発、React NativeでのiOS/Androidアプリの開発、そのバックエンドの開発(Ruby)を主に業務で担当している。もともとSwiftが好きだったが、業務でJavaScriptをがっつり触っているうちにJavaScriptへの愛着が湧いてきた。他にもブロックチェーンに関心があるので、Ethereumや他のチェーンの調査や、Solidityを使ったスマートコントラクトの実装をすることもある。",
+  "skills-title-programming": "Programming languages",
+  "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity",
+  "skills-title-environments": "OS",
+  "skills-environments": "MacOS / Linux",
+
+  "hobby-title": "Hobby / Interest",
+  "hobby-updated-at": "April 7th, 2018",
+  "hobby-description": "My hobby is programming to make something, workout, and travelling. In weekends, I help starups to develop or study blockchain which changes so fast that I'm into it. I like technology that changes our lives. In China, technology really has been changing their lives, which attracts me to visit Shenzhen many times.",
+  "hobby-title-travel": "Countries I visited recently",
+  "hobby-travel": "Israel / China（Shenzhen・Shanghai・Hangzhou） / HongKong / the US（San Francisco・Maryland）",
+  "hobby-title-blockchain": "Favorite blockchain",
+  "hobby-blockchain": "Ethereum / NEO / EOS"
 }

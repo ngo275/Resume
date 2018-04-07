@@ -2,13 +2,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import intl from 'react-intl-universal'
 import { CircularProgress } from 'material-ui/Progress'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { withStyles } from 'material-ui/styles'
 import { initialize, setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
 import Navbar from '../containers/Navbar'
+import ProfileHeader from '../components/ProfileHeader'
+import CareerCard from '../containers/CareerCard'
+import SkillsCard from '../containers/SkillsCard'
+import HobbyCard from '../containers/HobbyCard'
+import Footer from '../containers/Footer'
 
 const styles = theme => ({
   progress: {
@@ -25,7 +29,6 @@ class App extends Component {
 
   async componentWillMount () {
     await this.props.initLocale()
-    // await this.props.setLocale('en-US')
   }
 
   render() {
@@ -45,10 +48,11 @@ class App extends Component {
     return (
       <div className={classes.centered}>
         <Navbar />
-        <p className="App-intro">
-          {intl.get('en-US')}
-          hogehoge
-        </p>
+        <ProfileHeader />
+        <CareerCard/>
+        <SkillsCard/>
+        <HobbyCard/>
+        <Footer/>
       </div>
     )
   }
