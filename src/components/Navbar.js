@@ -2,7 +2,8 @@
 import React, { Component } from 'react'
 import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
-import Button from 'material-ui/Button'
+import Avatar from 'material-ui/Avatar'
+import IconButton from 'material-ui/IconButton'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import { withStyles } from 'material-ui/styles'
 import { Locale, Locales } from '../types'
@@ -13,14 +14,14 @@ const styles = theme => ({
     backgroundColor: '#DDD',
     width: '100%',
   },
-  button: {
+  iconButton: {
     margin: theme.spacing.unit,
     float: 'right',
-    width: 80,
   },
 })
 
 class Navbar extends Component {
+
   constructor (props) {
     super(props)
 
@@ -28,17 +29,13 @@ class Navbar extends Component {
       anchorEl: null,
     }
   }
+
   render () {
     return (
       <div className={this.props.classes.navbarContainer}>
-        <Button
-          aria-owns={this.state.anchorEl ? 'select-language-menu' : null}
-          aria-haspopup='true'
-          className={this.props.classes.button}
-          onClick={this.handleLangClick}
-        >
-          {intl.get('languages')}
-        </Button>
+        <IconButton onClick={this.handleLangClick} className={this.props.classes.iconButton}>
+          <Avatar alt='languages' src={require('../assets/ic_world.png')}/>
+        </IconButton>
         <Menu
           id='select-language-menu'
           anchorEl={this.state.anchorEl}

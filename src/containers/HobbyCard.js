@@ -10,9 +10,19 @@ export default compose(
     subTitle: 'hobby-updated-at',
     description: 'hobby-description',
     imgPath: require('../assets/ic_github.png'),
-    texts: [
-      'hobby-programming',
-
-    ],
+    contents: [
+      {
+        title: 'hobby-title-travel',
+        texts: [
+          'hobby-travel',
+        ]
+      },
+      {
+        title: 'hobby-title-blockchain',
+        texts: [
+          'hobby-blockchain',
+        ]
+      }
+    ]
   })
 )(MyCard)

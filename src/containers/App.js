@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import intl from 'react-intl-universal'
 import { CircularProgress } from 'material-ui/Progress'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { withStyles } from 'material-ui/styles'
@@ -12,6 +11,8 @@ import Navbar from '../containers/Navbar'
 import ProfileHeader from '../components/ProfileHeader'
 import CareerCard from '../containers/CareerCard'
 import SkillsCard from '../containers/SkillsCard'
+import HobbyCard from '../containers/HobbyCard'
+import Footer from '../containers/Footer'
 
 const styles = theme => ({
   progress: {
@@ -48,11 +49,10 @@ class App extends Component {
       <div className={classes.centered}>
         <Navbar />
         <ProfileHeader />
-        <p className="App-intro">
-          {intl.get('en-US')}
-        </p>
         <CareerCard/>
         <SkillsCard/>
+        <HobbyCard/>
+        <Footer/>
       </div>
     )
   }

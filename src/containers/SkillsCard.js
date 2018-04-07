@@ -10,9 +10,19 @@ export default compose(
     subTitle: 'skills-updated-at',
     description: 'skills-description',
     imgPath: require('../assets/ic_github.png'),
-    texts: [
-      'skills-programming',
-      'skills-environments',
-    ],
+    contents: [
+      {
+        title: 'skills-title-programming',
+        texts: [
+          'skills-programming',
+        ]
+      },
+      {
+        title: 'skills-title-environments',
+        texts: [
+          'skills-environments',
+        ]
+      }
+    ]
   })
 )(MyCard)

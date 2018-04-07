@@ -14,3 +14,8 @@ export const Locales = {
   'zh-CN': 'zh-CN',
   // 'zh-TW': 'zh-TW',
 }
+
+export type CardContentType = {
+  title?: ?string,
+  texts: Array<string>
+}

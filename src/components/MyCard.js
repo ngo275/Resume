@@ -11,6 +11,7 @@ import IconButton from 'material-ui/IconButton'
 import red from 'material-ui/colors/red'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
+// import type { CardContentType } from '../types'
 
 const styles = theme => ({
   card: {
@@ -47,7 +48,7 @@ class MyCard extends Component {
   }
 
   render () {
-    const { classes, title, subTitle, description, imgPath, texts } = this.props
+    const { classes, title, subTitle, description, imgPath, contents } = this.props
     return (
       <Card className={classes.card}>
         <CardHeader
@@ -83,13 +84,23 @@ class MyCard extends Component {
         </CardActions>
         <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
-            <Typography paragraph variant='body2'>
-            </Typography>
-            {texts.map(t => {
+            {contents.map(content => {
               return (
-                <Typography key={t} paragraph>
-                  {intl.get(t)}
-                </Typography>
+                <div>
+                  {content.title ?
+                    <Typography key={content.title} variant='body2'>
+                      ■ {intl.get(content.title)}
+                    </Typography>
+                    : null
+                  }
+                  {content.texts.map(t => {
+                    return (
+                      <Typography key={t} paragraph>
+                        {intl.get(t)}
+                      </Typography>
+                    )
+                  })}
+                </div>
               )
             })}
           </CardContent>
@@ -109,7 +120,7 @@ MyCard.propTypes = {
   subTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imgPath: PropTypes.any.isRequired,
-  texts: PropTypes.array.isRequired,
+  contents: PropTypes.array.isRequired,
 }
 
 export default withStyles(styles)(MyCard)
