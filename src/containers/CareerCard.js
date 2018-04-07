@@ -18,6 +18,7 @@ export default compose(
       'career-university-graduation',
       'career-gradschool-entry',
       'career-gradschool-dropout',
+      'career-anypay-entry',
     ],
 
   }),

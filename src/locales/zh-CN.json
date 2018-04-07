@@ -4,11 +4,13 @@
   "zh-CN": "中文(简)",
   "languages": "语言",
   "name": "永尾修一",
+
   "career-title": "事业",
   "career-updated-at": "2018年4月7日",
-  "career-description": "TODO",
+  "career-description": "2012年に東京大学に入学し在学中はラクロスにひたすら打ち込む。工学部に進学してそこでプログラミングに興味を持ち始める。2016年に大学を卒業し、大学院に進学するもスタートアップに熱中して1年して中退する。中退後はFinTechのスタートアップであるAnyPayにエンジニアとして入社する。",
   "career-university-entry": "2012年4月 东京大学理科Ⅰ類入学",
-  "creear-university-graduation": "2016年3月 东京大学工程系毕业",
+  "career-university-graduation": "2016年3月 东京大学工程系毕业",
   "career-gradschool-entry": "2016年4月 东京大学院工学系系统创建学专业入学",
-  "career-gradschool-dropout": "2017年3月 东京大学院中退"
+  "career-gradschool-dropout": "2017年3月 东京大学院中退",
+  "career-anypay-entry": "2017年4月 AnyPay会社入社"
 }
