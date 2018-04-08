@@ -9,10 +9,8 @@ import { initialize, setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
 import Navbar from '../containers/Navbar'
 import ProfileHeader from '../components/ProfileHeader'
-import CareerCard from '../containers/CareerCard'
-import SkillsCard from '../containers/SkillsCard'
-import HobbyCard from '../containers/HobbyCard'
 import Footer from '../containers/Footer'
+import Main from '../containers/Main'
 
 const styles = theme => ({
   progress: {
@@ -49,9 +47,7 @@ class App extends Component {
       <div className={classes.centered}>
         <Navbar />
         <ProfileHeader />
-        <CareerCard/>
-        <SkillsCard/>
-        <HobbyCard/>
+        <Main/>
         <Footer/>
       </div>
     )

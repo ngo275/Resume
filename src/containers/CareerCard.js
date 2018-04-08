@@ -6,6 +6,7 @@ import { compose, withProps } from 'recompose'
 export default compose(
   connect(),
   withProps({
+    avatarCharacter: 'C',
     title: 'career-title',
     subTitle: 'career-updated-at',
     description: 'career-description',

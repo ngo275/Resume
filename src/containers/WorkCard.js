@@ -6,24 +6,30 @@ import { compose, withProps } from 'recompose'
 export default compose(
   connect(),
   withProps({
-    avatarCharacter: 'H',
-    title: 'hobby-title',
-    subTitle: 'hobby-updated-at',
-    description: 'hobby-description',
+    avatarCharacter: 'P',
+    title: 'work-title',
+    subTitle: 'work-updated-at',
+    description: 'work-description',
     imgPath: require('../assets/ic_github.png'),
     contents: [
       {
-        title: 'hobby-title-travel',
+        title: 'work-title-paymo',
         texts: [
-          'hobby-travel',
+          'work-paymo',
         ]
       },
       {
-        title: 'hobby-title-blockchain',
+        title: 'work-title-mimi',
         texts: [
-          'hobby-blockchain',
+          'work-mimi',
         ]
-      }
+      },
+      {
+        title: 'work-title-marble',
+        texts: [
+          'work-marble',
+        ]
+      },
     ]
   })
 )(MyCard)
