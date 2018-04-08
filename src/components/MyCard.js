@@ -8,15 +8,18 @@ import Card, { CardHeader, CardMedia, CardContent, CardActions } from 'material-
 import Collapse from 'material-ui/transitions/Collapse'
 import ExpandMoreIcon from 'material-ui-icons/ExpandMore'
 import IconButton from 'material-ui/IconButton'
-import red from 'material-ui/colors/red'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
+import { COLOR_PALETTE } from '../common/color'
 // import type { CardContentType } from '../types'
 
 const styles = theme => ({
   card: {
     maxWidth: 420,
     margin: 16,
+  },
+  header: {
+    // backgroundColor: COLOR_PALETTE.PRIMARY_LIGHTER,
   },
   media: {
     height: 194,
@@ -35,7 +38,7 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: COLOR_PALETTE.SECONDARY_DARKER,
   },
 })
 
@@ -50,8 +53,9 @@ class MyCard extends Component {
   render () {
     const { classes, avatarCharacter, title, subTitle, description, imgPath, contents } = this.props
     return (
-      <Card className={classes.card}>
+      <Card className={classes.card} raised>
         <CardHeader
+          className={classes.header}
           avatar={
             <Avatar aria-label='Recipe' className={classes.avatar}>
               {avatarCharacter}

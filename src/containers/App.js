@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { CircularProgress } from 'material-ui/Progress'
+import createMuiTheme from 'material-ui/styles/createMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { withStyles } from 'material-ui/styles'
 import { initialize, setLocale } from '../ducks/intl'
@@ -11,6 +12,7 @@ import Navbar from '../containers/Navbar'
 import ProfileHeader from '../components/ProfileHeader'
 import Footer from '../containers/Footer'
 import Main from '../containers/Main'
+import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
   progress: {
@@ -21,6 +23,18 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center'
   }
+})
+
+const muiTheme = createMuiTheme({
+  typography: {
+    body1: {
+      color: COLOR_PALETTE.PRIMARY_LIGHTER
+    },
+    body2: {
+      color: COLOR_PALETTE.PRIMARY_LIGHTER
+    }
+  },
+
 })
 
 class App extends Component {
@@ -34,7 +48,7 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <MuiThemeProvider>
+        <MuiThemeProvider theme={muiTheme}>
           { isLoading ? this._renderLoading() : this._renderContents() }
         </MuiThemeProvider>
       </div>

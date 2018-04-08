@@ -4,11 +4,12 @@ import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
 import Avatar from 'material-ui/Avatar'
 import { withStyles } from 'material-ui/styles'
+import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
   container: {
     flex: 1,
-    backgroundColor: '#DDD',
+    backgroundColor: COLOR_PALETTE.PRIMARY,
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -18,6 +19,9 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     width: 120,
     height: 120,
+  },
+  name: {
+    color: COLOR_PALETTE.BASE,
   },
 })
 
@@ -32,7 +36,7 @@ class ProfileHeader extends Component {
       <div className={this.props.classes.container}>
         <Avatar alt='@ngo275' src={require('../assets/ic_me.png')} className={classes.avatar}/>
         <div>
-          <p>{intl.get('name')}</p>
+          <p className={classes.name}>{intl.get('name')}</p>
         </div>
       </div>
     )
