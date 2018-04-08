@@ -5,11 +5,12 @@ import PropTypes from 'prop-types'
 import Avatar from 'material-ui/Avatar'
 import IconButton from 'material-ui/IconButton'
 import { withStyles } from 'material-ui/styles'
+import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
   container: {
     flex: 1,
-    backgroundColor: '#DDD',
+    backgroundColor: COLOR_PALETTE.PRIMARY,
     width: '100%',
     height: 120,
   },
@@ -20,6 +21,11 @@ const styles = theme => ({
   iconButton: {
     margin: theme.spacing.unit,
   },
+  name: {
+    display: 'flex',
+    justifyContent: 'center',
+    color: COLOR_PALETTE.BASE,
+  }
 })
 
 class Footer extends Component {
@@ -38,7 +44,7 @@ class Footer extends Component {
             )
           })}
         </div>
-        <p className={classes.row}>Shuichi Nagao</p>
+        <p className={classes.name}>~ @ngo275 ~</p>
       </div>
     )
   }

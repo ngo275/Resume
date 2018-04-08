@@ -7,11 +7,12 @@ import IconButton from 'material-ui/IconButton'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import { withStyles } from 'material-ui/styles'
 import { Locale, Locales } from '../types'
+import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
   navbarContainer: {
     flex: 1,
-    backgroundColor: '#DDD',
+    backgroundColor: COLOR_PALETTE.PRIMARY,
     width: '100%',
   },
   iconButton: {
@@ -33,7 +34,7 @@ class Navbar extends Component {
   render () {
     return (
       <div className={this.props.classes.navbarContainer}>
-        <IconButton onClick={this.handleLangClick} className={this.props.classes.iconButton}>
+        <IconButton variant='raised' onClick={this.handleLangClick} className={this.props.classes.iconButton}>
           <Avatar alt='languages' src={require('../assets/ic_world.png')}/>
         </IconButton>
         <Menu
