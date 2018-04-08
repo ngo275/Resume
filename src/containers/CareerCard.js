@@ -10,7 +10,7 @@ export default compose(
     title: 'career-title',
     subTitle: 'career-updated-at',
     description: 'career-description',
-    imgPath: require('../assets/ic_github.png'),
+    imgPath: require('../assets/ic_career.png'),
     contents: [
       {
         title: 'career-title-university-entry',

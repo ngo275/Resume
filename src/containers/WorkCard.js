@@ -10,7 +10,7 @@ export default compose(
     title: 'work-title',
     subTitle: 'work-updated-at',
     description: 'work-description',
-    imgPath: require('../assets/ic_github.png'),
+    imgPath: require('../assets/ic_paymo.jpg'),
     contents: [
       {
         title: 'work-title-paymo',

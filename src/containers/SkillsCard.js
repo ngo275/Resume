@@ -10,7 +10,7 @@ export default compose(
     title: 'skills-title',
     subTitle: 'skills-updated-at',
     description: 'skills-description',
-    imgPath: require('../assets/ic_github.png'),
+    imgPath: require('../assets/ic_skills.png'),
     contents: [
       {
         title: 'skills-title-programming',

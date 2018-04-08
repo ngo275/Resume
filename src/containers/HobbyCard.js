@@ -10,7 +10,7 @@ export default compose(
     title: 'hobby-title',
     subTitle: 'hobby-updated-at',
     description: 'hobby-description',
-    imgPath: require('../assets/ic_github.png'),
+    imgPath: require('../assets/ic_hobby.jpg'),
     contents: [
       {
         title: 'hobby-title-travel',
