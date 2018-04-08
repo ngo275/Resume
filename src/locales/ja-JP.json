@@ -6,7 +6,7 @@
   "name": "永尾修一",
 
   "career-title": "略歴",
-  "career-updated-at": "2018年4月7日",
+  "career-updated-at": "更新日: 2018年4月7日",
   "career-description": "2012年に東京大学に入学し在学中はラクロスにひたすら打ち込む。工学部に進学してそこでプログラミングに興味を持ち始める。2016年に大学を卒業し、大学院に進学するもスタートアップに熱中して1年して中退する。中退後はFinTechのスタートアップであるAnyPayにエンジニアとして入社する。2017年の後半からブロックチェーンに関心が高まり、それ以来はブロックチェーン関連の新規事業の開発に関わっている。",
   "career-title-university-entry": "2012年4月 東京大学入学",
   "career-university-entry1": "前記教養課程では理科Ⅰ類で学び、それ以外の多くの時間を所属していたラクロス部で過ごす。",
@@ -21,7 +21,7 @@
   "career-anypay-entry1": "一人目の正式なiOSエンジニアとして入社し、割り勘アプリpaymoの開発に携わる。夏頃にはRubyで新規事業のサーバーサイドの開発にも関わる。秋以降はReact Nativeで新規プロジェクトのアプリ開発に専念してブロックチェーン周りの技術にも触れている。",
 
   "skills-title": "スキル",
-  "skills-updated-at": "2018年4月7日",
+  "skills-updated-at": "更新日: 2018年4月7日",
   "skills-description": "SwiftでのiOS開発、React NativeでのiOS/Androidアプリの開発、そのバックエンドの開発(Ruby)を主に業務で担当している。もともとSwiftが好きだったが、業務でJavaScriptをがっつり触っているうちにJavaScriptへの愛着が湧いてきた。他にもブロックチェーンに関心があるので、Ethereumや他のチェーンの調査や、Solidityを使ったスマートコントラクトの実装をすることもある。",
   "skills-title-programming": "よく利用している言語",
   "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity",
@@ -29,10 +29,20 @@
   "skills-environments": "MacOS / Linux",
 
   "hobby-title": "趣味・最近の関心",
-  "hobby-updated-at": "2018年4月7日",
+  "hobby-updated-at": "更新日: 2018年4月7日",
   "hobby-description": "趣味はプログラミングやものつくり、筋トレ、旅行。週末は他の会社の開発を手伝うこともあるが、それ以外の時間は好きなコードを書いていたり新しい技術を見ていたりする。朝ジムに行くことにもハマっていてウェイトをしてから出社している(朝行くと有名な経営者の方もいて知り合える..!)。海外にもよく視察を兼ねて旅行しており2017年は中国に頻繁に行っていた。",
   "hobby-title-travel": "最近行った国",
   "hobby-travel": "イスラエル / 中国（深セン・上海・杭州） / 香港 / アメリカ（サンフランシスコ・メリーランド）",
   "hobby-title-blockchain": "関心のあるブロックチェーン",
-  "hobby-blockchain": "Ethereum / NEO / EOS"
+  "hobby-blockchain": "Ethereum / NEO / EOS",
+
+  "work-title": "関わったプロダクト開発",
+  "work-updated-at": "更新日: 2018年4月8日",
+  "work-description": "大学院時代に関わっていたインターンシップ先では女性向けのメディア・動画アプリを作ってきた。実装担当部分もクライアントからバックエンド幅広く行っていた。その後はAnyPayで割り勘アプリpaymoの開発に携わり、チーム開発の難しさや事業の要件に合わせてビジネスロジックが複雑化する中、いかに保守性の高く保つかどうテストを書いていくのか、やりながら経験することができた。",
+  "work-title-paymo": "割り勘アプリpaymo",
+  "work-paymo": "2017年の1月後半にリリースされたが、ちょうどそのタイミングで開発に関わりだした。当時は外注だったためその内製化や、設計から見直してチームでリファクタリングをしてきた。個人としてはiOSの実装と場合によってはサーバーサイドの実装を行っていたが、iOSだけで3人、PMも含めると全体で8人程度のチームにてスクラムで開発をしてきた。",
+  "work-title-mimi": "メイクのハウツー動画アプリMimi",
+  "work-mimi": "大学院時代のインターンシップ先のアプリ。動画アプリで、クライアントiOS(Swift)と、APIの開発(node.js)、配信している動画管理用の社内のWebサイトの開発・運用(Ruby on Rails)を担当していた。パフォーマンスやメモリーリークにこだわるようにしていた。人が少なくエンジニアが3人ほどで自分はiOS、API、管理画面を開発していた。",
+  "work-title-marble": "女性向けキュレーションメディアMarble",
+  "work-marble": "上記のMimiと同様にインターンシップ先で開発をしていた。PHPでWebの開発を半年弱した後、iOSの開発に数ヶ月関わった。はじめて業務でプログラミングをしたプロダクト。"
 }

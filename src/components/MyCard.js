@@ -48,13 +48,13 @@ class MyCard extends Component {
   }
 
   render () {
-    const { classes, title, subTitle, description, imgPath, contents } = this.props
+    const { classes, avatarCharacter, title, subTitle, description, imgPath, contents } = this.props
     return (
       <Card className={classes.card}>
         <CardHeader
           avatar={
             <Avatar aria-label='Recipe' className={classes.avatar}>
-              C
+              {avatarCharacter}
             </Avatar>
           }
           title={intl.get(title)}
@@ -116,6 +116,7 @@ class MyCard extends Component {
 
 MyCard.propTypes = {
   classes: PropTypes.object.isRequired,
+  avatarCharacter: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

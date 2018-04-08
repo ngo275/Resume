@@ -6,7 +6,7 @@ import { withStyles } from 'material-ui/styles'
 import CareerCard from '../containers/CareerCard'
 import SkillsCard from '../containers/SkillsCard'
 import HobbyCard from '../containers/HobbyCard'
-import Footer from '../containers/Footer'
+import WorkCard from '../containers/WorkCard'
 
 const styles = theme => ({
   root: {
@@ -39,11 +39,11 @@ class Main extends Component {
               </Grid>
             </Grid>
             <Grid item xs={12} sm={6}>
+              <Grid key='work' item xs={12} className={classes.centered}>
+                <WorkCard/>
+              </Grid>
               <Grid key='hobby' item xs={12} className={classes.centered}>
                 <HobbyCard/>
-              </Grid>
-              <Grid key='skills2' item xs={12} className={classes.centered}>
-                <SkillsCard/>
               </Grid>
             </Grid>
           </Grid>
