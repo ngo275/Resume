@@ -23,6 +23,12 @@ export default compose(
         texts: [
           'hobby-blockchain',
         ]
+      },
+      {
+        title: 'interest-title-thesedays',
+        texts: [
+          'interest-thesedays',
+        ]
       }
     ]
   })
