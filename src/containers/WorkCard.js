@@ -13,6 +13,12 @@ export default compose(
     imgPath: require('../assets/ic_paymo.jpg'),
     contents: [
       {
+        title: 'work-title-voltorb',
+        texts: [
+          'work-voltorb',
+        ]
+      },
+      {
         title: 'work-title-paymo',
         texts: [
           'work-paymo',
@@ -29,7 +35,7 @@ export default compose(
         texts: [
           'work-marble',
         ]
-      },
+      }
     ]
   })
 )(MyCard)
