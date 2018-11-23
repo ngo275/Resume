@@ -20,7 +20,7 @@ export default compose(
       },
       {
         provider: 'linkedin',
-        url: 'https://www.linkedin.com/in/%E4%BF%AE%E4%B8%80-%E6%B0%B8%E5%B0%BE-23920611b/'
+        url: 'https://www.linkedin.com/in/shuichi-nagao'
       },
       {
         provider: 'hatena',
