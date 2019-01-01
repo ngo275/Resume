@@ -22,7 +22,7 @@
 
   "skills-title": "Skills",
   "skills-updated-at": "Last edited | January 1st, 2019",
-  "skills-description": "I mainly code Swift, JavaScript(React Native), or Ruby(Ruby on Rails). At first, I like Swift the best, however through development with React Native, I'm getting in favor of JavaScript. Besides I'm interested in new technologies, including blockchain and machine learning, which I believe will be keys for innovation.",
+  "skills-description": "I mainly code JavaScript(React Native / node.js), Solidity(Ethereum development), or Swift(iOS development). At first, I liked Swift the best, however through development with React Native and node.js, I'm getting in favor of JavaScript. Besides I'm interested in new technologies, including blockchain and machine learning, which I believe will be keys for innovation.",
   "skills-title-programming": "Programming languages",
   "skills-programming": "Swift / JavaScript(React, React Native, node.js) / Ruby(Ruby on Rails) / Solidity / Go",
   "skills-title-environments": "OS",
@@ -30,12 +30,11 @@
 
   "hobby-title": "Hobby / Interest",
   "hobby-updated-at": "Last edited | January 1st, 2019",
-  "hobby-description": "My hobby is programming, workout, books, and travelling. I like technologies that can change our lives. In China, technologies actually have been changing their lives, which allures me to visit Shenzhen many times.",
+  "hobby-description": "My hobby is programming, workout, books, and travelling. I like technologies that can change our lives. In China, technologies actually have been changing their lives, which allures me to visit Shenzhen many times. Though I'm an engineer, I'm strongly interested in business itself.",
   "hobby-title-travel": "Countries I visited recently",
   "hobby-travel": "Singapore / Indonesia / Vietnam / Thailand / Cambodia / Israel / China（Shenzhen・Shanghai・Hangzhou） / HongKong",
   "interest-title-thesedays": "What interests me these days",
   "interest-thesedays": "The amount of information is getting so big that we need to redefine a new interface between offline and online, which will lead innovations.",
-
   "work-title": "Projects",
   "work-updated-at": "Last edited | June 2nd, 2018",
   "work-description": "As an intern I was involved in media(web, iOS) applications for young women, where I developed not only iOS but backend and AWS. After joining AnyPay Inc., my colleagues and I had been working on a new application called 'paymo' to make it an internal project. I experienced work flow with more than 8 people, coding highly maintainable tests, and refactoring from architecture. I was involved in crypto space since fall in 2017, technically, I use React Native and Ethereum. In that project, as the backend consists of micro services, I code Go, node.js, or Ruby when backend task is stuck.",
