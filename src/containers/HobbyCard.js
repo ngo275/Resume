@@ -19,12 +19,6 @@ export default compose(
         ]
       },
       {
-        title: 'hobby-title-blockchain',
-        texts: [
-          'hobby-blockchain',
-        ]
-      },
-      {
         title: 'interest-title-thesedays',
         texts: [
           'interest-thesedays',
