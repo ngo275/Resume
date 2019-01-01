@@ -34,7 +34,7 @@ class ProfileHeader extends Component {
     const { classes } = this.props
     return (
       <div className={this.props.classes.container}>
-        <Avatar alt='@ngo275' src={require('../assets/ic_me.png')} className={classes.avatar}/>
+        <Avatar alt='@ngo275' src={require('../assets/ic_me.jpg')} className={classes.avatar}/>
         <div>
           <p className={classes.name}>{intl.get('name')}</p>
         </div>
