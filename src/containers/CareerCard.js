@@ -42,7 +42,16 @@ export default compose(
           'career-anypay-entry1',
         ]
       },
-
+      {
+        title: 'career-title-anypay-resign',
+        texts: []
+      },
+      {
+        title: 'career-title-pandai-entry',
+        texts: [
+          'career-pandai-entry',
+        ]
+      },
     ]
   })
 )(MyCard)
