@@ -13,6 +13,12 @@ export default compose(
     imgPath: require('../assets/ic_paymo.jpg'),
     contents: [
       {
+        title: 'work-title-pandai',
+        texts: [
+          'work-pandai',
+        ]
+      },
+      {
         title: 'work-title-voltorb',
         texts: [
           'work-voltorb',
