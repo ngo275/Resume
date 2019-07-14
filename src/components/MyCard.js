@@ -17,6 +17,7 @@ const styles = theme => ({
   card: {
     maxWidth: 420,
     margin: 16,
+    whiteSpace: 'pre-line'
   },
   header: {
     // backgroundColor: COLOR_PALETTE.PRIMARY_LIGHTER,
