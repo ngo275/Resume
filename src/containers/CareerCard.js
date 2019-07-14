@@ -52,6 +52,16 @@ export default compose(
           'career-pandai-entry',
         ]
       },
+      {
+        title: 'career-title-pandai-resign',
+        texts: []
+      },
+      {
+        title: 'career-title-credify-entry',
+        texts: [
+          'career-credify-entry',
+        ]
+      },
     ]
   })
 )(MyCard)
