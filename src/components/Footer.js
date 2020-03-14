@@ -39,7 +39,7 @@ class Footer extends Component {
           {sns.map(service => {
             return (
               <IconButton key={service.provider} className={this.props.classes.iconButton} href={service.url} target='_blank'>
-                <Avatar alt='twitter' src={`../assets/ic_${service.provider}.png`}/>
+                <Avatar alt='twitter' src={require(`../assets/ic_${service.provider}.png`)}/>
               </IconButton>
             )
           })}
