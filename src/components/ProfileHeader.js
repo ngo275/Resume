@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
-import Avatar from 'material-ui/Avatar'
-import { withStyles } from 'material-ui/styles'
+import Avatar from '@material-ui/core/Avatar'
+import { withStyles } from '@material-ui/core/styles'
 import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
@@ -16,7 +16,7 @@ const styles = theme => ({
     alignItems: 'center'
   },
   avatar: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
     width: 120,
     height: 120,
   },
@@ -34,7 +34,7 @@ class ProfileHeader extends Component {
     const { classes } = this.props
     return (
       <div className={this.props.classes.container}>
-        <Avatar alt='@ngo275' src={require('../assets/ic_me.jpg')} className={classes.avatar}/>
+        <Avatar alt='@ngo275' src={require('../assets/ic_me.png')} className={classes.avatar}/>
         <div>
           <p className={classes.name}>{intl.get('name')}</p>
         </div>

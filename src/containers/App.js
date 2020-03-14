@@ -2,10 +2,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { CircularProgress } from 'material-ui/Progress'
-import createMuiTheme from 'material-ui/styles/createMuiTheme'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import { withStyles } from 'material-ui/styles'
+import CircularProgress from '@material-ui/core/CircularProgress';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 import { initialize, setLocale } from '../ducks/intl'
 import type { Locale } from '../types'
 import Navbar from '../containers/Navbar'
@@ -16,7 +16,7 @@ import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
   progress: {
-    margin: theme.spacing.unit * 2,
+    margin: theme.spacing(2),
   },
   centered: {
     display: 'flex',

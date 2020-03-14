@@ -3,13 +3,17 @@ import React, { Component } from 'react'
 import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import Avatar from 'material-ui/Avatar'
-import Card, { CardHeader, CardMedia, CardContent, CardActions } from 'material-ui/Card'
-import Collapse from 'material-ui/transitions/Collapse'
-import ExpandMoreIcon from 'material-ui-icons/ExpandMore'
-import IconButton from 'material-ui/IconButton'
-import Typography from 'material-ui/Typography'
-import { withStyles } from 'material-ui/styles'
+import Avatar from '@material-ui/core/Avatar'
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Collapse from '@material-ui/core/Collapse'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import IconButton from '@material-ui/core/IconButton'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 import { COLOR_PALETTE } from '../common/color'
 // import type { CardContentType } from '../types'
 
@@ -89,18 +93,18 @@ class MyCard extends Component {
         </CardActions>
         <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
-            {contents.map(content => {
+            {contents.map((content, index) => {
               return (
-                <div>
+                <div key={index}>
                   {content.title ?
-                    <Typography key={content.title} variant='body2'>
+                    <Typography key={index} variant='body2'>
                       ■ {intl.get(content.title)}
                     </Typography>
                     : null
                   }
-                  {content.texts.map(t => {
+                  {content.texts.map((t, index) => {
                     return (
-                      <Typography key={t} paragraph>
+                      <Typography key={index} paragraph>
                         {intl.get(t)}
                       </Typography>
                     )

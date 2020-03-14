@@ -2,9 +2,9 @@
 import React, { Component } from 'react'
 // import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
-import Avatar from 'material-ui/Avatar'
-import IconButton from 'material-ui/IconButton'
-import { withStyles } from 'material-ui/styles'
+import IconButton from '@material-ui/core/IconButton';
+import Avatar from '@material-ui/core/Avatar';
+import { withStyles } from '@material-ui/core/styles'
 import { COLOR_PALETTE } from '../common/color'
 
 const styles = theme => ({
@@ -19,7 +19,7 @@ const styles = theme => ({
     justifyContent: 'center',
   },
   iconButton: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
   },
   name: {
     display: 'flex',
@@ -39,7 +39,7 @@ class Footer extends Component {
           {sns.map(service => {
             return (
               <IconButton key={service.provider} className={this.props.classes.iconButton} href={service.url} target='_blank'>
-                <Avatar alt='twitter' src={require(`../assets/ic_${service.provider}.png`)}/>
+                <Avatar alt='twitter' src={`../assets/ic_${service.provider}.png`}/>
               </IconButton>
             )
           })}

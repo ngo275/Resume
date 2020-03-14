@@ -2,10 +2,11 @@
 import React, { Component } from 'react'
 import intl from 'react-intl-universal'
 import PropTypes from 'prop-types'
-import Avatar from 'material-ui/Avatar'
-import IconButton from 'material-ui/IconButton'
-import Menu, { MenuItem } from 'material-ui/Menu'
-import { withStyles } from 'material-ui/styles'
+import Avatar from '@material-ui/core/Avatar'
+import IconButton from '@material-ui/core/IconButton'
+import Menu from '@material-ui/core/Menu'
+import MenuItem from '@material-ui/core/MenuItem'
+import { withStyles } from '@material-ui/core/styles'
 import { Locale, Locales } from '../types'
 import { COLOR_PALETTE } from '../common/color'
 
@@ -16,7 +17,7 @@ const styles = theme => ({
     width: '100%',
   },
   iconButton: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
     float: 'right',
   },
 })
